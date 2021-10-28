@@ -490,8 +490,15 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 
 // console.log(sum);
 
-arr.filter(function (value, index) {
-  if (value % 2 === 1) {
-    console.log(value);
-  }
-});
+// arr.filter(function (value, index) {
+//   if (value % 2 === 1) {
+//     console.log(value);
+//   }
+// });
+
+var names = [11, 22, 33, 11, 33, 22, 12];
+var uniq = names.reduce(function (a, b) {
+  if (a.indexOf(b) < 0) a.push(b);
+  return a;
+}, []);
+console.log(uniq);
