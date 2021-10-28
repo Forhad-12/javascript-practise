@@ -1,0 +1,17 @@
+<div id="app">
+  <h1>hello mr. It's my javascript practise code</h1>
+  <button id="button">click me</button>
+  <p id="demo"></p>
+  <p id="increase"></p>
+</div>
+<script>
+  let buttons = document.getElementById('button');
+
+  buttons.addEventListener('click', myAlert);
+
+  function myAlert() {
+    document.getElementById('demo').innerHTML += 'You are Jenious <br>';
+    let increase = document.getElementById('increase');
+    increase.innerHTML = 'ami jani,<br> But tui to khanki';
+  }
+</script>
