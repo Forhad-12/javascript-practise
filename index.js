@@ -517,5 +517,16 @@ let Forhad = function (width, height) {
   };
 };
 
-let res = new Forhad(10, 8);
-res.draw();
+// let res = new Forhad(10, 8);
+// res.draw();
+
+// function myNew(constructor) {
+//   let obj = {};
+//   Object.setPrototypeOf(obj, constructor.prototype);
+//   let argArray = Array.prototype.slice.apply(arguments);
+//   constructor.apply(obj, argArray.slice(1));
+//   return obj;
+// }
+
+// let rect4 = myNew(Forhad, 45, 25);
+// rect4.draw();
