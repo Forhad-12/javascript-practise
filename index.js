@@ -496,9 +496,26 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 //   }
 // });
 
-var names = [11, 22, 33, 11, 33, 22, 12];
-var uniq = names.reduce(function (a, b) {
-  if (a.indexOf(b) < 0) a.push(b);
-  return a;
-}, []);
-console.log(uniq);
+// var names = [11, 22, 33, 11, 33, 22, 12];
+// var uniq = names.reduce(function (a, b) {
+//   if (a.indexOf(b) < 0) a.push(b);
+//   return a;
+// }, []);
+// console.log(uniq);
+
+let Forhad = function (width, height) {
+  this.width = width;
+  this.height = height;
+  this.draw = function () {
+    console.log('I am Forhad Sikder');
+    this.print();
+    console.log(this);
+  };
+  this.print = function () {
+    console.log('My width is ' + this.width);
+    console.log('My height is ' + this.height);
+  };
+};
+
+let res = new Forhad(10, 8);
+res.draw();
