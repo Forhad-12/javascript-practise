@@ -503,19 +503,21 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 // }, []);
 // console.log(uniq);
 
-let Forhad = function (width, height) {
-  this.width = width;
-  this.height = height;
-  this.draw = function () {
-    console.log('I am Forhad Sikder');
-    this.print();
-    console.log(this);
-  };
-  this.print = function () {
-    console.log('My width is ' + this.width);
-    console.log('My height is ' + this.height);
-  };
-};
+// constructor pattern
+
+// let Forhad = function (width, height) {
+//   this.width = width;
+//   this.height = height;
+//   this.draw = function () {
+//     console.log('I am Forhad Sikder');
+//     this.print();
+//     console.log(this);
+//   };
+//   this.print = function () {
+//     console.log('My width is ' + this.width);
+//     console.log('My height is ' + this.height);
+//   };
+// };
 
 // let res = new Forhad(10, 8);
 // res.draw();
@@ -530,3 +532,63 @@ let Forhad = function (width, height) {
 
 // let rect4 = myNew(Forhad, 45, 25);
 // rect4.draw();
+
+// let str = new String('str')
+
+// console.log(str + 'my string is')
+
+// function test() {
+//   console.log('something');
+// }
+// console.log(test.name, test.length);
+
+// let Rect = new Function(
+//   'width',
+//   'height',
+//   `this.width = width;
+//   this.height = height;
+//   this.draw = function () {
+//     console.log('I am Forhad Sikder');
+//     this.print();
+//     console.log(this);
+//   };
+//   this.print = function () {
+//     console.log('My width is ' + this.width);
+//     console.log('My height is ' + this.height);
+//   }`
+// );
+// let rect5 = new Rect(4, 5);
+// console.log(rect5);
+
+// Call, apply, bind
+// function myFunc(c, d){
+//   console.log(this.a + this.b + c + d)
+// }
+// myFunc.call({a : 40, b: 25}, 8, 9)
+
+// myFunc.apply({a : 400, b: 225}, [5,2])
+
+// let myBind = myFunc.bind({a: 10, b: 10})
+// myBind(7,8)
+
+// let n = 10;
+// function myNum(n) {
+//   n = n + 100;
+//   console.log(n);
+// }
+
+// myNum(n);
+// console.log(n);
+
+// let obj = {
+//   a: 9,
+//   b: 10,
+// };
+
+// function myObj(obj) {
+//   obj.a = obj.a + 100;
+//   obj.b = obj.b + 110;
+//   console.log(obj);
+// }
+// myObj(obj);
+// console.log(obj);
