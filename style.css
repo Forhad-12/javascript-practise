@@ -3,7 +3,7 @@ h2 {
   font-family: Lato;
   text-align: center;
   text-transform: capitalize;
-  color: blue;
+  color: rgb(60, 60, 224);
 }
 #app {
   text-align: center;
@@ -20,5 +20,5 @@ button {
 }
 button:hover {
   color: white;
-  background-color: blue;
+  background-color: rgb(60, 60, 224);
 }
