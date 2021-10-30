@@ -637,7 +637,7 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 
 // console.log(res.position);
 
-// let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // function nam(myArr) {
 //   let anoArr = [];
 //   for (let i = 0; i < myArr.length; i++) {
@@ -649,3 +649,63 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 // }
 
 // console.log(nam(myArr));
+
+// function myLove(myArr){
+//   myArr.redu
+// }
+// let myPet = myArr.reduce(function (a, b) {
+//   if (a.indexOf(b) < 0) a.push(b);
+//   return a;
+// }, []);
+
+// console.log(myPet);
+
+// var names = [11, 22, 33, 11, 33, 22, 12];
+// var uniq = names.reduce(function (a, b) {
+//   if (a.indexOf(b) < 0) a.push(b);
+//   return a;
+// }, []);
+// console.log(uniq);
+
+// let Reactangle = function (width, height) {
+//   let position = {
+//     a: 50,
+//     b: 25,
+//   };
+//   this.width = width;
+//   this.height = height;
+
+//   this.getPosition = function () {
+//     return position;
+//   };
+
+//   let print = function () {
+//     console.log('My width is = ' + this.width);
+//     console.log('My height is = ' + this.height);
+//   }.bind(this);
+
+//   this.draw = function () {
+//     console.log('I am a draw');
+//     print();
+//     console.log('Position is a = ' + position.a + ' b = ' + position.b);
+//   };
+//   Object.defineProperty(this, 'position', {
+//     get: function () {
+//       return position;
+//     },
+//     set: function (value) {
+//       position = value;
+//     },
+//   });
+// };
+
+// let rect = new Reactangle(10, 5);
+// rect.draw();
+
+// console.log(rect.getPosition());
+// rect.position = {
+//   a: 450,
+//   b: 550,
+// };
+
+// console.log(rect.position);
