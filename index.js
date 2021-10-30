@@ -593,46 +593,60 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 // myObj(obj);
 // console.log(obj);
 
-let Forhad = function (width, height) {
-  let position = {
-    x: 52,
-    y: 25,
-  };
+// let Forhad = function (width, height) {
+//   let position = {
+//     x: 52,
+//     y: 25,
+//   };
 
-  this.width = width;
-  this.height = height;
+//   this.width = width;
+//   this.height = height;
 
-  let print = function () {
-    console.log('My width is ' + this.width);
-    console.log('My height is ' + this.height);
-  }.bind(this);
+//   let print = function () {
+//     console.log('My width is ' + this.width);
+//     console.log('My height is ' + this.height);
+//   }.bind(this);
 
-  this.getPosition = function () {
-    return position;
-  };
+//   this.getPosition = function () {
+//     return position;
+//   };
 
-  this.draw = function () {
-    console.log('I am Forhad Sikder');
-    print();
-    console.log('position : X = ' + position.x + ', Y = ' + position.y);
-  };
-  Object.defineProperty(this, 'position', {
-    get: function () {
-      return position;
-    },
-    set: function (value) {
-      position = value;
-    },
-  });
-};
+//   this.draw = function () {
+//     console.log('I am Forhad Sikder');
+//     print();
+//     console.log('position : X = ' + position.x + ', Y = ' + position.y);
+//   };
+//   Object.defineProperty(this, 'position', {
+//     get: function () {
+//       return position;
+//     },
+//     set: function (value) {
+//       position = value;
+//     },
+//   });
+// };
 
-let res = new Forhad(10, 8);
-res.draw();
-console.log(res.getPosition());
+// let res = new Forhad(10, 8);
+// res.draw();
+// console.log(res.getPosition());
 
-res.position = {
-  a: 7,
-  b: 5,
-};
+// res.position = {
+//   a: 7,
+//   b: 5,
+// };
 
-console.log(res.position);
+// console.log(res.position);
+
+// let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function nam(myArr) {
+//   let anoArr = [];
+//   let sum = 0
+//   for (let i = 0; i < myArr.length; i++) {
+//     if (myArr[i] % 2 === 1) {
+//       anoArr.push(myArr[i]);
+//     }
+//   }
+//   return anoArr;
+// }
+
+// console.log(nam(myArr));
