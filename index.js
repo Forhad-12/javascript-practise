@@ -637,7 +637,6 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 
 // console.log(res.position);
 
-let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // function nam(myArr) {
 //   let anoArr = [];
 //   for (let i = 0; i < myArr.length; i++) {
@@ -709,3 +708,15 @@ let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // };
 
 // console.log(rect.position);
+
+let myArr = [1, 2, 3, 4, 5, 6, 7, 8];
+function myArray(myArr) {
+  let num = 0;
+  for (let i = 0; i < myArr.length; i++) {
+    if (myArr[i] < myArr[i + 2] || myArr[i] < myArr[1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(myArray(myArr));
