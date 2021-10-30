@@ -640,7 +640,6 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 // let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // function nam(myArr) {
 //   let anoArr = [];
-//   let sum = 0
 //   for (let i = 0; i < myArr.length; i++) {
 //     if (myArr[i] % 2 === 1) {
 //       anoArr.push(myArr[i]);
