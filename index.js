@@ -718,19 +718,25 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 //   return true;
 // }
 // console.log(myArray(myArr));
-let myArr = [1, 2, 3, 4, 3, 5];
-let mySort = myArr.sort(function (a, b) {
-  if (a < b && a > b) {
-    return 1;
-  } else {
-    return -1;
-  }
-});
+// let myArr = [1, 2, 3, 4, 3, 5];
+// let mySort = myArr.sort(function (a, b) {
+//   if (a < b && a > b) {
+//     return 1;
+//   } else {
+//     return -1;
+//   }
+// });
 
-console.log(mySort);
+// console.log(mySort);
 
-let res2 = myArr.every(function (value) {
-  return value % 2 === 0;
-});
+// let res2 = myArr.every(function (value) {
+//   return value % 2 === 0;
+// });
 
-console.log(res2);
+// console.log(res2);
+
+// let d = new Date()
+// let n = d.getFullYear()
+// let m = n.toString()
+
+// console.log(m)
