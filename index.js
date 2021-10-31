@@ -709,13 +709,28 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 
 // console.log(rect.position);
 
-let myArr = [1, 2, 3, 4, 5, 6, 7, 8];
-function myArray(myArr) {
-  for (let i = 0; i < myArr.length; i++) {
-    if (myArr[i] < myArr[i - 1]) {
-      return false;
-    }
+// function myArray(myArr) {
+//   for (let i = 0; i < myArr.length; i++) {
+//     if (myArr[i] < myArr[i - 1]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(myArray(myArr));
+let myArr = [1, 2, 3, 4, 3, 5];
+let mySort = myArr.sort(function (a, b) {
+  if (a < b && a > b) {
+    return 1;
+  } else {
+    return -1;
   }
-  return true;
-}
-console.log(myArray(myArr));
+});
+
+console.log(mySort);
+
+let res2 = myArr.every(function (value) {
+  return value % 2 === 0;
+});
+
+console.log(res2);
