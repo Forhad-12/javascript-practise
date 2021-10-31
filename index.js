@@ -711,9 +711,8 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 
 let myArr = [1, 2, 3, 4, 5, 6, 7, 8];
 function myArray(myArr) {
-  let num = 0;
   for (let i = 0; i < myArr.length; i++) {
-    if (myArr[i] < myArr[i + 2] || myArr[i] < myArr[1 - i]) {
+    if (myArr[i] < myArr[i - 1]) {
       return false;
     }
   }
