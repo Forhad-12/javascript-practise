@@ -740,3 +740,43 @@ let arr = [1, 2, 3, 67, 4, 5, 62];
 // let m = n.toString()
 
 // console.log(m)
+
+// function Person(name){
+//   this.name = name
+// }
+// let p = new Person('forhad')
+// console.log(p)
+
+let person = {
+  name: 'forhad',
+};
+// console.log(person);
+// console.log(person.toString())
+
+// for (let i in person) {
+//   console.log(i);
+// }
+
+// console.log(Object.keys(person));
+// let descripter = Object.getOwnPropertyDescriptor(person, 'name')
+// console.log(descripter)
+
+// let baseObj = Object.getPrototypeOf(person);
+// let descripter = Object.getOwnPropertyDescriptor(baseObj, 'toString');
+// console.log(descripter);
+
+// Object.defineProperty(person, 'name', {
+//   enumerable: false,
+//   Writable: false,
+//   configurable: false,
+//   value: 'mr forhad',
+// });
+
+// console.log(person);
+
+// for (let i in person) {
+//   console.log(i);
+// }
+
+// person.name = 'forhad sikder';
+// console.log(person);
