@@ -809,3 +809,17 @@ let person = {
 // let name = 'MD Forhad';
 
 // console.log(`Hi, I am ${name} sikder`);
+
+// let a = [1, 2, 3, 4, 5, 6];
+// console.log(...a);
+
+// let obj = {
+//   a: 10,
+//   b: 20,
+//   c: 30,
+// };
+// let obj2 = {
+//   ...obj,
+// };
+
+// console.log(obj2);
