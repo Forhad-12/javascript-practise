@@ -781,31 +781,31 @@ let person = {
 // person.name = 'forhad sikder';
 // console.log(person);
 
-function mixin(target, ...sources) {
-  Object.assign(target, ...sources);
-}
+// function mixin(target, ...sources) {
+//   Object.assign(target, ...sources);
+// }
 
-let canWalk = {
-  walk: function () {
-    console.log('Walking ...');
-  },
-};
+// let canWalk = {
+//   walk: function () {
+//     console.log('Walking ...');
+//   },
+// };
 
-let canEat = {
-  eat: function () {
-    console.log('Eating ...');
-  },
-};
+// let canEat = {
+//   eat: function () {
+//     console.log('Eating ...');
+//   },
+// };
 
-function Person(name) {
-  this.name = name;
-}
-mixin(Person.prototype, canWalk, canEat);
+// function Person(name) {
+//   this.name = name;
+// }
+// mixin(Person.prototype, canWalk, canEat);
 
-let persons = new Person('Md Forhad');
+// let persons = new Person('Md Forhad');
 
-console.log(persons);
+// console.log(persons);
 
-let name = 'MD Forhad';
+// let name = 'MD Forhad';
 
-console.log(`Hi, I am ${name} sikder`);
+// console.log(`Hi, I am ${name} sikder`);
